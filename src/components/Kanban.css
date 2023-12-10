@@ -1,0 +1,195 @@
+
+.kanban {
+    display: flex;
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 1%;
+  }
+  
+  .kanban-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 10px;
+  }
+  
+  .kanban-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    min-width: 300px;
+    max-width: 500px;
+   
+  }
+  
+  .kanban-column-header {
+    padding: 10px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 0.875rem;
+  }
+  
+  .kanban-column-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px 10px 0;
+    list-style: none;
+  }
+  
+  .kanban-column-footer {
+    padding: 10px;
+    font-size: 0.875rem;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+  }
+  
+  .card {
+    padding: 20px 10px;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #fff;
+    cursor: grab;
+  }
+  
+  .card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card Container */
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; /* Set width as needed */
+  }
+  
+  /* Card ID */
+  .card-id {
+    font-weight: bold;
+    font-size: 13px;
+    color: #666;
+    float: left;
+    margin-left: 2%;
+  }
+  
+  /* Card User ID */
+  .card-user-id {
+    color: #666;
+    float: right;
+    font-size: 13px;
+    margin-right: 2%;
+  }
+  
+  /* Card Title */
+  .card-title {
+    margin-top: 12%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    font-size: 13px;
+    font-weight: bold;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    text-align: left;
+  }
+  
+  /* Card Tag */
+  .card-tag {
+    
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: 0.2px solid rgb(223, 221, 221);
+    padding: 1%;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 2%;
+    margin-top: 2%x;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #666;
+    width: 45%;
+  }
+
+
+  /* DropDown */
+
+  
+.dropdown {
+    width: 200px;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    background-color: white;
+  }
+  
+  .dropdown-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-body {
+    padding: 5px;
+    border-top: 1px solid #E5E8EC;
+    display: none;
+  }
+  
+  .dropdown-body.open {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+  }
+  
+  .dropdown-item:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown-item-dot {
+    opacity: 0;
+    color: #91A5BE;
+    transition: all .2s ease-in-out;
+  }
+  
+  .dropdown-item-dot.selected {
+    opacity: 1;
+  }
+  
+  .icon {
+    font-size: 13px;
+    color: #91A5BE;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+  }
+  
+  .icon.open {
+    transform: rotate(90deg);
+  }
+
+
+  .countOfTickets{
+    color: #666;
+  }
+
+
+  /* Sort buttons */
+
+  .sort-by-priority {
+    float: right;
+    margin-right: 10px;
+  }
+
+  .sort-by-title{
+    float: right;
+    margin-right: 10px;
+    color: #666;
+  }
+
+  .sortby{
+    float: right;
+    margin-right: 10px;
+  }
